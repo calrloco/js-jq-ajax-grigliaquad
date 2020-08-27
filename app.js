@@ -14,12 +14,11 @@ $(document).ready(function () {
         if (risposta <= 5) {
           square.addClass("green");
           square.append(risposta);
-          square.unbind('click');
-        } else {
+          } else {
           square.addClass("yellow");
           square.append(risposta);
-          square.unbind('click');
         }
+        square.off('click');
       },
       error: function () {
         alert("si e verificato un errore");
