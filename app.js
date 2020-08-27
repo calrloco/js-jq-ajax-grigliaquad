@@ -12,13 +12,13 @@ $(document).ready(function () {
       'success': function (risposta) {
           var risposta = risposta.response;
           console.log(risposta);
-          if (risposta <= '5'){
+          if (risposta <= 5){
               square.addClass('green');
               square.append(risposta);
-          }else{
+            }else{
             square.addClass('yellow');
             square.append(risposta);
-          };
+            };
         },
       error: function () {
         alert("si e verificato un errore");

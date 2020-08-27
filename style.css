@@ -18,10 +18,12 @@ html{
 }
 body{
     background-color: var(--pink);
-    
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 .container{
-    margin:0 auto;
+    margin: 0 auto;
     width: 70vw;
     height: 100vh;
     display: flex;
@@ -47,7 +49,9 @@ body{
 }
 .green{
     background-color: var(--green);
+    color: var(--violet-dark);
 }
 .yellow{
     background-color: var(--yellow);
+    color: var(--violet-dark);
 }
