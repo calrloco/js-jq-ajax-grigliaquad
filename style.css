@@ -12,8 +12,13 @@
     --violet-dark: #700eb0;
     --pink: #f8479d;
 }
+html{
+    font-size: 62.5%;
+    font-family: 'Poiret One', cursive;
+}
 body{
     background-color: var(--pink);
+    
 }
 .container{
     margin:0 auto;
@@ -29,6 +34,10 @@ body{
     height: calc(100% / 6);
     background-color: var(--violet-square);
     transition: all .2s;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .quadrati:hover{
     transform: scale(1.04);

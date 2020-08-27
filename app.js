@@ -14,8 +14,10 @@ $(document).ready(function () {
           console.log(risposta);
           if (risposta <= '5'){
               square.addClass('green');
+              square.append(risposta);
           }else{
             square.addClass('yellow');
+            square.append(risposta);
           };
         },
       error: function () {
