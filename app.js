@@ -14,9 +14,11 @@ $(document).ready(function () {
         if (risposta <= 5) {
           square.addClass("green");
           square.append(risposta);
-          } else {
+          
+        } else {
           square.addClass("yellow");
           square.append(risposta);
+          
         }
         square.off('click');
       },
@@ -26,13 +28,7 @@ $(document).ready(function () {
     });
   });
   $('.button').click(function(){
-     init();
-  });
-  function init() {
-    var quadrati = $(".quadrati");
-    quadrati.removeClass("yellow");
-    quadrati.removeClass("green");
-    quadrati.text('');
     location.reload();
-  };
+  });
+ 
 });
