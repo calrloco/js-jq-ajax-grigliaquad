@@ -3,7 +3,7 @@ $(document).ready(function () {
   for (var i = 0; i < 36; i++) {
     $(".container").append('<div class="quadrati"></div>');
   }
-  $(".quadrati").one("click", function () {
+  $(".quadrati").on("click", function () {
     var square = $(this);
     $.ajax({
       url: "https://flynn.boolean.careers/exercises/api/random/int",
@@ -14,9 +14,11 @@ $(document).ready(function () {
         if (risposta <= 5) {
           square.addClass("green");
           square.append(risposta);
+          square.unbind('click');
         } else {
           square.addClass("yellow");
           square.append(risposta);
+          square.unbind('click');
         }
       },
       error: function () {
@@ -32,5 +34,6 @@ $(document).ready(function () {
     quadrati.removeClass("yellow");
     quadrati.removeClass("green");
     quadrati.text('');
+    location.reload();
   };
 });
