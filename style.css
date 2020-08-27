@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --yellow: #fff466;
+    --green: #24f08b;
+    --violet-square:#8f5de1;
+    --violet-dark: #700eb0;
+    --pink: #f8479d;
+}
+body{
+    background-color: var(--pink);
+}
+.container{
+    margin:0 auto;
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.quadrati{
+    border: 1px solid var(--violet-dark);
+    flex: 0 1 calc(100% / 6);
+    height: calc(100% / 6);
+    background-color: var(--violet-square);
+    transition: all .2s;
+}
+.quadrati:hover{
+    transform: scale(1.04);
+}
+.quadrati:active{
+    transform: scale(1);
+}
+.green{
+    background-color: var(--green);
+}
+.yellow{
+    background-color: var(--yellow);
+}
