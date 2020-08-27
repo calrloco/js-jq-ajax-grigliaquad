@@ -54,8 +54,8 @@ body{
     position: absolute;
     cursor: pointer;
     border: none;
-    left: 11rem;
-    top: 5rem;
+    left: 1.8rem;
+    top: 2rem;
     background-color: var(--green);
     font-size: 3rem;
     text-align: center;
