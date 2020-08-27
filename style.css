@@ -47,14 +47,6 @@ body{
 .quadrati:active{
     transform: scale(1);
 }
-.green{
-    background-color: var(--green);
-    color: var(--violet-dark);
-}
-.yellow{
-    background-color: var(--yellow);
-    color: var(--violet-dark);
-}
 .button{
     height: 5rem;
     padding: 1rem;
@@ -62,10 +54,29 @@ body{
     position: absolute;
     cursor: pointer;
     border: none;
-    left: 5rem;
-    top: 2rem;
+    left: 11rem;
+    top: 5rem;
     background-color: var(--green);
     font-size: 3rem;
     text-align: center;
     font-family: 'Poiret One', cursive;
+    transition: all .2s;
+}
+.button:focus{
+    outline: none;
+}
+.button:hover{
+    transform: translateY(-.2rem);
+     
+}
+.button:active{
+    transform: translateY(0);
+}
+.green{
+    background-color: var(--green);
+    color: var(--violet-dark);
+}
+.yellow{
+    background-color: var(--yellow);
+    color: var(--violet-dark);
 }
