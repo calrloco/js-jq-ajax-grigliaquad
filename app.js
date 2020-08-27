@@ -3,7 +3,7 @@ $(document).ready(function () {
     for(var i=0;i<36;i++){
         $('.container').append('<div class="quadrati"></div>');
     }
-  $(".quadrati").click(function () {
+  $(".quadrati").one('click',function () {
       var square = $(this);
       $.ajax(
           {
