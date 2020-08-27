@@ -50,7 +50,7 @@ body{
 .button{
     height: 5rem;
     padding: 1rem;
-    border-radius: .8rem;
+    border-radius: .2rem;
     position: absolute;
     cursor: pointer;
     border: none;
