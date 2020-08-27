@@ -4,16 +4,23 @@ $(document).ready(function () {
         $('.container').append('<div class="quadrati"></div>');
     }
   $(".quadrati").click(function () {
+      var square = $(this);
       $.ajax(
           {
       'url': "https://flynn.boolean.careers/exercises/api/random/int",
       'method': "GET",
-      'succes': function (risposta) {
-        console.log(risposta);
-      },
+      'success': function (risposta) {
+          var risposta = risposta.response;
+          console.log(risposta);
+          if (risposta <= '5'){
+              square.addClass('green');
+          }else{
+            square.addClass('yellow');
+          };
+        },
       error: function () {
         alert("si e verificato un errore");
-      },
+      }
     });
   });
 });
