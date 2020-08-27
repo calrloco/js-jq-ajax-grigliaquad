@@ -3,7 +3,7 @@ $(document).ready(function () {
   for (var i = 0; i < 36; i++) {
     $(".container").append('<div class="quadrati"></div>');
   }
-  // funzione gioco
+  // funzione 
   $(".quadrati").on("click", function () {
     var square = $(this);
     $.ajax({
@@ -11,15 +11,12 @@ $(document).ready(function () {
       method: "GET",
       success: function (risposta) {
         var risposta = risposta.response;
-        console.log(risposta);
+        square.append(risposta);
         if (risposta <= 5) {
           square.addClass("green");
-          square.append(risposta);
-        } else {
+          } else {
           square.addClass("yellow");
-          square.append(risposta);
-          
-        }
+          }
         square.off('click');
       },
       error: function () {
