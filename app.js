@@ -11,7 +11,7 @@ $(document).ready(function () {
       method: "GET",
       success: function (risposta) {
         var risposta = risposta.response;
-        square.append(risposta);
+        square.text(risposta);
         if (risposta <= 5) {
           square.addClass("yellow");
           } else {
