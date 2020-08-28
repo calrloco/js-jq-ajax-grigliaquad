@@ -2,7 +2,7 @@ $(document).ready(function () {
   // popolo dinamicamnete il container nel dom di quadrati colorati
   for (var i = 0; i < 36; i++) {
     $(".container").append('<div class="quadrati"></div>');
-  }
+  };
   // funzione 
   $(".quadrati").on("click", function () {
     var square = $(this);
@@ -13,9 +13,9 @@ $(document).ready(function () {
         var risposta = risposta.response;
         square.append(risposta);
         if (risposta <= 5) {
-          square.addClass("green");
-          } else {
           square.addClass("yellow");
+          } else {
+          square.addClass("green");
           }
         square.off('click');
       },

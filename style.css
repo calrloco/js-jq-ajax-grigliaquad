@@ -43,6 +43,7 @@ body{
     cursor: pointer;
 }
 .quadrati:hover{
+    border: 2px solid var(--violet-dark);
     transform: scale(1.04);
 }
 .quadrati:active{
